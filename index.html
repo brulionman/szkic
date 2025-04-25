@@ -1,111 +1,127 @@
 <!DOCTYPE html>
-<html lang="pl">
-
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	
-    
-                                <!--Bootstrap CDN-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.4.1/sandstone/bootstrap.min.css">
-	
-                                <!--FontaAwesome-->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-    
-                                <!--Content Delivery Network - hover -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css">
-
-                                <!--Favicon-->
-    <link rel="icon" href="FavRedSun.png"> 
-
-	
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-
-    
-    
-	<title>OPTIKOL | TELETECHNIKA PODZIEMNA</title>
-
-     <!-- ===================================================================================================== INDEX ============================================ -->
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Growth - Startup Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!------------------------------------ Start of the Header -------------------------------->
-    <header>
+  <header class="container header">
+    <div class="logo">Growth<span class="dot">.</span></div>
+    <nav class="nav">
+      <a href="#">Features</a>
+      <a href="#">About us</a>
+      <a href="#">Blog</a>
+      <button class="login">Log in</button>
+    </nav>
+  </header>
 
-        <nav>
-            <div class="navbar"> <!--- Title -->
-            
-                <span class="navbar-text">
-                    <h1>OPTIKOL</h1>
-                </span>
-                
+  <section class="hero container">
+    <div class="hero-text">
+      <h1>A powerful solution to grow your startup. Fast!</h1>
+      <p>Organize, collaborate, and track progress seamlessly with our one-stop startup growth tool.</p>
+      <div class="buttons">
+        <button class="primary">Get started</button>
+        <button class="secondary">Book a demo</button>
+      </div>
+    </div>
+    <div class="hero-images">
+      <!-- Images or illustrations would go here -->
+    </div>
+  </section>
 
-                <!-- <a class="navbar-brand ml-auto" href="#">
-                        <img class="d-none d-md-block" src="assets/images/SpyraSparksmaster8.png" width="60" height="60" alt="Spyra Sparksmaster logo">
-                </a> -->
-            </div>
+  <section class="video-section">
+    <div class="container">
+      <h2>See how it works and get started in less than 2 minutes</h2>
+      <div class="video-placeholder">
+        <!-- Placeholder for embedded video or preview -->
+      </div>
+      <button class="primary">Get started</button>
+    </div>
+  </section>
 
-           
+  <section class="testimonials">
+    <div class="container">
+      <h2>Don't just take our word for it, see the success stories from businesses just like yours.</h2>
+      <div class="testimonial-cards">
+        <div class="card">“Our business has seen a significant increase in productivity since we started using the Growth app.” – Katherine Smith</div>
+        <div class="card">“As a small business owner... this app is a game-changer for me.” – Jonathan Lee</div>
+        <div class="card">“The dashboards and reporting features... it's a game changer.” – Daniel Wilson</div>
+      </div>
+    </div>
+  </section>
 
-            <div class="container-fluid"> 
-                <div class="row">
+  <section class="pricing container">
+    <h2>Pricing</h2>
+    <p>Start free and scale while you grow. No hidden fees, unlimited users for free.</p>
+    <div class="pricing-cards">
+      <div class="card">
+        <h3>Simple</h3>
+        <p class="price">Free</p>
+        <ul>
+          <li>Basic issue monitoring</li>
+          <li>Task history (3 months)</li>
+          <li>Schedule appointments</li>
+        </ul>
+        <button class="primary">Get started</button>
+      </div>
+      <div class="card premium">
+        <h3>Premium</h3>
+        <p class="price">$49/month</p>
+        <ul>
+          <li>Everything from the free plan</li>
+          <li>Private internal dashboards</li>
+          <li>Slack integration</li>
+          <li>Extended app access controls</li>
+        </ul>
+        <button class="primary">Get started</button>
+      </div>
+    </div>
+  </section>
 
+  <section class="faq container">
+    <h2>Frequently asked questions</h2>
+    <details>
+      <summary>How does the contract management feature help me keep track of clients and partners?</summary>
+      <p>Helps track client records, gain valuable insights, and streamline partnerships.</p>
+    </details>
+    <details>
+      <summary>Can I customize the dashboards?</summary>
+      <p>Yes! Tailor dashboards to show what matters most.</p>
+    </details>
+    <details>
+      <summary>Can I collaborate with my team?</summary>
+      <p>Absolutely, team features are built in!</p>
+    </details>
+  </section>
 
-
-                    
-                
-                </div>
-            </div>
-        </nav>    
-    </header>
-    <!------------------------------------ End of the Header ---------------------------------->
-
-
-    <!------------------------------------ Start of the Content ------------------------------->
-    <section class="landing">
-    </section>
-
-    <!------------------------------------ End of the Content---------------------------------->
-
-
-    <!------------------------------------ Start of the Footer -------------------------------->
-    <footer class="container-fluid whole-footer">
-
-            <div class="row no-gutters">
-                
-                <div class="col-sm footcol footcol-contact"> <!--- CONTACT ---------------->
-                    <h4>KONTAKT</h4>
-                        <p>
-                            <i class="far fa-envelope"></i>
-                                <span class="sr-only">Mail</span>
-                            <i class="fas fa-at"></i>
-                                <span class="sr-only">e-mail</span>
-                                    zapytajoprzewiert@gmail.com
-                                    <!-- kontakt@optikol.com -->
-                        </p>
-                        <p>
-                            <i class="fab fa-whatsapp"></i>
-                                <span class="sr-only">WhatsApp</span>
-                            <i class="fas fa-phone-alt"></i>
-                                <span class="sr-only">Phone</span>
-                                    +48 555 997 666
-                        </p>
-
-                </div>
-                <div>
-                    &copy; 2025 OPTIKOL. Wszelkie prawa zastrzeżone.
-                </div>
-            </div>
-    </footer>
-	<!------------------------------------ End of the Footer----------------------------------->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
+  <footer class="footer container">
+    <div class="newsletter">
+      <p>Subscribe to newsletter</p>
+      <input type="email" placeholder="Enter your email">
+      <button class="primary">Subscribe</button>
+    </div>
+    <div class="footer-columns">
+      <div>
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Our team</a>
+        <a href="#">Join us</a>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <a href="#">Blog</a>
+        <a href="#">Recent Projects</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:hello@growthapp.com">hello@growthapp.com</a>
+      </div>
+    </div>
+    <p class="copyright">© 2024 Growth. All rights reserved.</p>
+  </footer>
 </body>
-
 </html>
