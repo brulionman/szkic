@@ -37,12 +37,15 @@ body {
     padding: 0.5rem 1rem;
     cursor: pointer;
   }
+
+
   
   .hero {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-top: 2rem;
+    padding: 3rem 1rem
   }
   
   .hero-text h1 {
@@ -79,6 +82,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
   }
+
   
   .video-section {
     background: #111;
@@ -86,7 +90,47 @@ body {
     text-align: center;
     padding: 3rem 1rem;
   }
+
+  /* .video-thumb {
+    width: 480px;
+    max-width: 100%;
+    border-radius: 8px;
+  } */
   
+/* poprawiamy */
+
+.video-placeholder {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  
+  .video-thumb-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .video-thumb {
+    width: 480px;
+    max-width: 100%;
+    border-radius: 12px;
+    display: block;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    padding: 0.5rem 0.8rem;
+    pointer-events: none; /* so clicking goes through to <a> */
+  }
+
+/* koniec poprawki */
   .testimonials {
     margin: 4rem 0;
   }
@@ -148,6 +192,10 @@ body {
     text-decoration: none;
     display: block;
     margin: 0.25rem 0;
+  }
+
+  .copyright {
+    padding-top: 1rem;
   }
   
   input[type="email"] {

@@ -7,9 +7,14 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <section>
-  <header class="container header">
+  <header id="top" class="container header">
     <div class="logo">OPTIKOL<span class="dot">.</span></div>
     <nav class="nav">
       <a href="#">Oferta</a>
@@ -35,14 +40,28 @@
   <section class="video-section">
     <div class="container">
       <h2>Zobacz niektore z naszych realizacji</h2>
+
       <div class="video-placeholder">
-        <!-- Placeholder for embedded video or preview -->
+        <a href="https://www.youtube.com/watch?v=iCt4VVUWOAA" target="_blank" class="video-thumb-wrapper">
+          <img class="video-thumb" src="https://img.youtube.com/vi/iCt4VVUWOAA/hqdefault.jpg" alt="Zobacz film">
+          <div class="play-button">&#9658;</div>
+        </a>
       </div>
+
+      <!-- <div class="video-placeholder">
+        
+        
+          <a href="https://www.youtube.com/watch?v=iCt4VVUWOAA" target="_blank">
+            <img src="https://img.youtube.com/vi/iCt4VVUWOAA/hqdefault.jpg" alt="Zobacz film" style="width:100%; border-radius: 8px;">
+          </a>
+        
+      </div> -->
+
       <button class="primary">Złóż zamówienie</button>
     </div>
   </section>
 
-  <section class="testimonials">
+  <section id="Ofirmie" class="testimonials">
     <div class="container">
       <h2>Nie musisz wierzyć nam na słowo. Zobacz opinie o nas.</h2>
       <div class="testimonial-cards">
@@ -56,9 +75,14 @@
     </div>
   </section>
 
-  <section class="pricing container">
-    <h2>Cennik</h2>
-    <p>Ceny zależą od przekroju zamawianego duktu. Ostateczną ofertę możemy przedstawić po zapoznaniu się ze specyfikacją Państwa projektu.</p>
+  <section id="Oferta" class="pricing container">
+    <h2>Oferta</h2>
+    <p>
+      Wykonujemy powierzony kontrakt na maszynach Ditch Witch stosując oryginalne części i z wykorzystaniem oryginalnych materiałów eksploatacyjnych, certyfikowanych dla środowiska naturalnego. 
+    </p>
+    <p>
+      Ceny zależą od przekroju zamawianego duktu. Ostateczną ofertę możemy przedstawić po zapoznaniu się ze specyfikacją Państwa projektu.
+    </p>
     <div class="pricing-cards">
       <div class="card">
         <h3>Przewiert sterowany standard</h3>
@@ -85,7 +109,7 @@
     </div>
   </section>
 
-  <section class="faq container">
+  <section id="FAQ" class="faq container">
     <h2>Najczęstsze pytania</h2>
     <details>
       <summary>Jaka jest minimalna długość zamawianego przewiertu?</summary>
@@ -115,9 +139,14 @@
       
       <div class="footer-columns">
         <div>
-          <h4>Optikol</h4>
-          <a href="#">O firmie</a>
-          <a href="#">Oferta</a>
+          <h4>
+            <a href="#top">
+              Optikol
+            </a>
+          </h4>
+          <a href="#Ofirmie">O firmie</a>
+          <a href="#Oferta">Oferta</a>
+          <a href="#FAQ">FAQ</a>
           <a href="https://www.gov.pl/web/klimat" target="_blank">MKiŚ</a>
         </div>
         <!-- <div>
@@ -127,6 +156,7 @@
         </div> -->
         <div>
           <h4>Kontakt</h4>
+          <p>Na maile odpowiadamy w ciągu 24 godzin</p>
           <a href="mailto:zapytajoprzewiert@gmail.com">Wyślij zapytanie</a>
           <a href="mailto:wspolpraca@gmail.com">Nawiąż wsółpracę</a>
         </div>
