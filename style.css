@@ -87,20 +87,29 @@ body {
     padding: 3rem 1rem;
   }
   
-  .testimonials, .pricing, .faq {
+  .testimonials {
     margin: 4rem 0;
   }
-  
-  .testimonial-cards, .pricing-cards {
+
+  .pricing,
+  .faq {
+    margin: 4rem auto;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    max-width: 1200px;
+}
+
+.testimonial-cards, .pricing-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-  }
-  
-  .card {
+}
+
+.card {
     background: #f9f9f9;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 8px;
     max-width: 300px;
   }
@@ -117,8 +126,13 @@ body {
   .footer {
     background: #111;
     color: #fff;
-    padding: 2rem 1rem;
+    padding: 3rem 0;
     text-align: center;
+  }
+
+  .footer .container {
+    max-width: 100%;
+    padding: 0 1rem;
   }
   
   .footer-columns {
@@ -169,4 +183,3 @@ body {
       align-items: center;
     }
   }
-  
