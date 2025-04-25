@@ -18,6 +18,11 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
+    background: var(--accent-black);
+    /* position: sticky; */
+    top: 0;
+    z-index: 1000;
+    /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); */
   }
   
   .logo {
@@ -31,7 +36,7 @@ body {
     color: #333;
   }
   
-  .nav .login {
+  .nav {
     background: #eee;
     border: none;
     padding: 0.5rem 1rem;
@@ -41,12 +46,35 @@ body {
 
   
   .hero {
+    
+    position: relative;
+    height: 60vh;
+    background: url(images/DW_Beauty.jpg) center/cover no-repeat;
+/* powyzsze na probe */
+   
     display: flex;
+/*ponizej 3 linie*/
+    align-items: center;
+    justify-content: center;
+    color: white;
+
     flex-direction: column;
     text-align: center;
     margin-top: 2rem;
     padding: 3rem 1rem
   }
+
+  /* i tu dokladamy ponizej "before" i "content" */
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0 , 0.5); /* przyciemnienie */
+    z-index: 0;
+  }
+
+
   
   .hero-text h1 {
     font-size: 2rem;
@@ -55,14 +83,28 @@ body {
   
   .hero-text p {
     font-size: 1rem;
-    color: #555;
+    color: #e2ba09;
+    z-index: 1;
     margin-bottom: 1.5rem;
   }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 1rem;
+  }
   
-  .buttons {
+  /* .buttons {
     display: flex;
     justify-content: center;
     gap: 1rem;
+
+  }
+
+  .buttons:hover {
+    background-color: blue;
+    color: white
   }
   
   .primary {
@@ -72,6 +114,11 @@ body {
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
   }
   
   .secondary {
@@ -81,6 +128,59 @@ body {
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     cursor: pointer;
+  } */
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  /* PRIMARY button */
+  .primary {
+    background-color: #3b82f6;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Primary hover effect - ciemniejszy niebieski */
+  .primary:hover {
+    background-color: #2563eb; /* ciemniejszy odcień */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .primary:active {
+    transform: scale(0.97);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+  }
+
+  /* SECONDARY button */
+.secondary {
+    background-color: transparent;
+    border: 1px solid #3b82f6;
+    color: #3b82f6;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .secondary:hover {
+    background-color: #3b82f6;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .secondary:active {
+    transform: scale(0.97);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
   }
 
   
