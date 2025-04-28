@@ -22,6 +22,5 @@ Strona firmowa.
 
 ## Jak rozwijać projekt
 
-1. Klonuj repozytorium:
-   ```bash
-   git clone https://github.com/brulionman/brulionman.github.io.git
+1. Autor
+projekt i wykonanie: brulionman
