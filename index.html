@@ -1,218 +1,141 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>  <!-- ================== HEAD ================== -->
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OPTIKOL EUROPA - Teletechnika podziemna Landing Page</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
   <link rel="icon" href="favSlonce.png" type="image/png">
-</head> <!-- ================== END OF HEAD ================== -->
-<section>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
   <header id="top" class="container header">
     <div class="logo">OPTIKOL<span class="dot">.</span></div>
     <nav class="nav">
       <a href="mailto:zapytajoprzewiert@gmail.com">Zamów</a>
       <a href="#Oferta">Oferta</a>
       <a href="#Ofirmie">O firmie</a>
-      <!-- <button class="login">Log in</button> -->
     </nav>
   </header>
 
-  <section  class="hero">
+  <!-- Hero Section -->
+  <section class="hero">
     <div class="hero-text hero-content">
-      <h1>Dostarczymy Twoje mediaAAAAAAAA. Szybko i bez wykopów!</h1>
+      <h1>Dostarczymy Twoje media. Szybko i bez wykopów!</h1>
       <p>Przygotujemy plan robót i profesjonalnie zrealizujemy zlecenia w Polsce i Europie.</p>
       <div class="buttons">
-
-        <!-- Guzik ZAMÓW -->
-        <a 
-          href="mailto:zapytajoprzewiert@gmail.com?subject=Zapytanie%20o%20przewiert&body=Dzie%C5%84%20dobry%2C%0A%0AChcia%C5%82bym%20zam%C3%B3wi%C4%87%20przewiert.%20Poni%C5%BCej%20przesy%C5%82am%20szczeg%C3%B3%C5%82y%3A%0A%0AImi%C4%99%20i%20nazwisko%3A%20%0ANumer%20telefonu%3A%20%0AAdres%20inwestycji%3A%20%0AD%C5%82ugo%C5%9B%C4%87%20przewiertu%3A%20%0AOrientacyjna%20data%20realizacji%3A%20%0ADodatkowe%20informacje%3A%20%0A%0APozdrawiam%2C" 
-          class="primary" 
-          target="_blank" 
-          rel="noopener noreferrer">
-              Zamów
-        </a>
-
-        <!-- <button class="secondary">Zadaj pytanie</button> -->
-        <a 
-          href="mailto:zapytajoprzewiert@gmail.com?subject=Pytanie%20ze%20strony%20optikol.pl&body=Dzie%C5%84%20dobry%2C%0A%0AMam%20pytanie%20dotycz%C4%85ce%20Pa%C5%84stwa%20oferty%3A%0A%0A%5BTutaj%20wpisz%20swoje%20pytanie%5D%0A%0APozdrawiam%2C" 
-          class="secondary" 
-          target="_blank" 
-          rel="noopener noreferrer">
-              Zadaj pytanie
-        </a>
-      
+        <a href="mailto:zapytajoprzewiert@gmail.com?subject=Zapytanie%20o%20przewiert" class="primary" target="_blank">Zamów</a>
+        <a href="mailto:zapytajoprzewiert@gmail.com?subject=Pytanie%20ze%20strony%20optikol.pl" class="secondary" target="_blank">Zadaj pytanie</a>
       </div>
     </div>
-    <div class="hero-images">
-      <!-- Images or illustrations would go here -->
-    </div>
+    <div class="hero-images"></div>
   </section>
 
-
-  
-  <section class="video-section"> <!-- ================== VIDEO ================== -->
+  <!-- Video Section -->
+  <section class="video-section">
     <div class="container">
-      <h2>Zobacz niektore z naszych realizacji</h2>
-
+      <h2>Zobacz niektóre z naszych realizacji</h2>
       <div class="video-placeholder">
         <a href="https://www.youtube.com/watch?v=iCt4VVUWOAA" target="_blank" class="video-thumb-wrapper">
           <img class="video-thumb" src="https://img.youtube.com/vi/iCt4VVUWOAA/hqdefault.jpg" alt="Zobacz film">
           <div class="play-button">&#9658;</div>
         </a>
       </div>
-
-      <!-- Guzik ZAMÓW -->
-      <a 
-        href="mailto:zapytajoprzewiert@gmail.com?subject=Zapytanie%20o%20przewiert&body=Dzie%C5%84%20dobry%2C%0A%0AChcia%C5%82bym%20zam%C3%B3wi%C4%87%20przewiert.%20Poni%C5%BCej%20przesy%C5%82am%20szczeg%C3%B3%C5%82y%3A%0A%0AImi%C4%99%20i%20nazwisko%3A%20%0ANumer%20telefonu%3A%20%0AAdres%20inwestycji%3A%20%0AD%C5%82ugo%C5%9B%C4%87%20przewiertu%3A%20%0AOrientacyjna%20data%20realizacji%3A%20%0ADodatkowe%20informacje%3A%20%0A%0APozdrawiam%2C" 
-        class="primary" 
-        target="_blank" 
-        rel="noopener noreferrer"
-      >
-        Zamów
-      </a>
-
-
+      <a href="mailto:zapytajoprzewiert@gmail.com?subject=Zapytanie%20o%20przewiert" class="primary" target="_blank">Zamów</a>
     </div>
   </section>
 
-  <section id="Ofirmie" class="testimonials"> <!-- ================== REFERENCJE ================== -->
+  <!-- Testimonials -->
+  <section id="Ofirmie" class="testimonials">
     <div class="container">
       <h2>Nie musisz wierzyć nam na słowo. Zobacz opinie o nas.</h2>
       <div class="testimonial-cards">
-        <div class="card">“Optikol znacząco nam pomógł w modyfikacji planu robót gdy napotkaliśmy problemy z ukrytą infrastrukturą”<br>
-          <br> – Marian Przaśny, ISRAELI TELECOM</div>
-        <div class="card">“Nieduża firma z ogromnym doświadczeniem.”<br>
-          <br> – Stefan Karwowski, BUDOPOL-STALIMPEX</div>
-        <div class="card">“Powierzone zadania Optikol wykonał przed terminem co pozwoliło nam na oszczędności i komfortowe zamknięcie całego projektu”<br>
-          <br> – Pan Maliniak, GDDKiA</div>
+        <div class="card">“Optikol znacząco nam pomógł...”<br>– Marian Przaśny, ISRAELI TELECOM</div>
+        <div class="card">“Nieduża firma z ogromnym doświadczeniem.”<br>– Stefan Karwowski, BUDOPOL-STALIMPEX</div>
+        <div class="card">“Powierzone zadania wykonane przed terminem.”<br>– Pan Maliniak, GDDKiA</div>
       </div>
     </div>
   </section>
 
-  <section id="Oferta" class="pricing container"> <!-- ================== OFERTA ================== -->
+  <!-- Oferta -->
+  <section id="Oferta" class="pricing container">
     <h2>Oferta</h2>
-    <p>
-      Wykonujemy powierzony kontrakt na maszynach Ditch Witch stosując oryginalne części i z wykorzystaniem oryginalnych materiałów eksploatacyjnych, certyfikowanych dla środowiska naturalnego. 
-    </p>
-    <p>
-      Ceny zależą od przekroju zamawianego duktu. Ostateczną ofertę możemy przedstawić po zapoznaniu się ze specyfikacją Państwa projektu.
-    </p>
-    
+    <p>Wykonujemy przewierty na maszynach Ditch Witch...</p>
     <div class="pricing-cards">
-
       <div class="card">
         <h3>Przewiert sterowany standard</h3>
-        <p class="price">Standard</p>
         <ul>
-          <li>Zabezpiecznie BHP na wejsciu i wyjsciu duktu</li>
+          <li>Zabezpieczenie BHP</li>
           <li>Dokumentacja</li>
-          <li>1 wizyta rozpoznawcza w terenie przed zawarciem kontraktu</li>
-          <li>Prace na terytorium Polski</li>
+          <li>Wizyta rozpoznawcza</li>
+          <li>Prace w Polsce</li>
         </ul>
-
-                  <!-- Guzik ZAMÓW -->
-      <a 
-      href="mailto:zapytajoprzewiert@gmail.com?subject=Zapytanie%20o%20przewiert&body=Dzie%C5%84%20dobry%2C%0A%0AChcia%C5%82bym%20zam%C3%B3wi%C4%87%20przewiert.%20Poni%C5%BCej%20przesy%C5%82am%20szczeg%C3%B3%C5%82y%3A%0A%0AImi%C4%99%20i%20nazwisko%3A%20%0ANumer%20telefonu%3A%20%0AAdres%20inwestycji%3A%20%0AD%C5%82ugo%C5%9B%C4%87%20przewiertu%3A%20%0AOrientacyjna%20data%20realizacji%3A%20%0ADodatkowe%20informacje%3A%20%0A%0APozdrawiam%2C" 
-      class="primary" 
-      target="_blank" 
-      rel="noopener noreferrer"
-        >
-          Zamów
-      </a>
-      
+        <a href="mailto:zapytajoprzewiert@gmail.com?subject=Zapytanie%20o%20przewiert" class="primary" target="_blank">Zamów</a>
       </div>
 
       <div class="card premium">
-        <!-- <h3>Przewiert sterowany </h3><h3 class="h3-premium">Premium</h3> -->
         <div class="h3-row">
           <h3 class="left-heading">Przewiert sterowany</h3>
           <h3 class="right-heading">Premium</h3>
         </div>
-        <p class="price">Standard plus 30%</p>
         <ul>
-          <li>Wszystko z planu Standard</li>
-          <li>Komunikacja z przydzielonym koordynatorem</li>
-          <li>Przywrócenie nawierzchni na obu końcach duktu</li>
+          <li>Standard + koordynator</li>
+          <li>Przywrócenie nawierzchni</li>
           <li>Konsultacje w terenie</li>
         </ul>
-                <!-- Guzik ZAMÓW !!PREMIUM!! -->
-                <a 
-                href="mailto:zapytajoprzewiert@gmail.com?subject=Zamawiam%20Premium&body=Dzie%C5%84%20dobry%2C%0A%0AChcia%C5%82bym%20zam%C3%B3wi%C4%87%20przewiert%20Premium.%20Poni%C5%BCej%20przesy%C5%82am%20szczeg%C3%B3%C5%82y%3A%0A%0AImi%C4%99%20i%20nazwisko%3A%20%0ANumer%20telefonu%3A%20%0AAdres%20inwestycji%3A%20%0AD%C5%82ugo%C5%9B%C4%87%20przewiertu%3A%20%0AOrientacyjna%20data%20realizacji%3A%20%0ADodatkowe%20informacje%3A%20%0A%0APozdrawiam%2C" 
-                class="primary premium-button"
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                Zamów
-              </a>
-      
+        <a href="mailto:zapytajoprzewiert@gmail.com?subject=Zamawiam%20Premium" class="primary premium-button" target="_blank">Zamów</a>
       </div>
     </div>
   </section>
 
-  <section id="FAQ" class="faq container"> <!-- ================== FAQ ================== -->
+  <!-- FAQ -->
+  <section id="FAQ" class="faq container">
     <h2>Najczęstsze pytania</h2>
     <details>
-      <summary>Jaka jest minimalna długość zamawianego przewiertu?</summary>
-      <p>Prace rozpoczynamy od przewiertów o łącznej długości minimum 500m.</p>
+      <summary>Minimalna długość przewiertu?</summary>
+      <p>Minimum 500m.</p>
     </details>
     <details>
-      <summary>Czy możliwe są przewierty poza terytorium Polski?</summary>
-      <p>Oczywiście, należy pamiętać, że zagraniczne zlecenia podlegają indywidualnej wycenie.</p>
+      <summary>Przewierty poza Polską?</summary>
+      <p>Tak, indywidualna wycena.</p>
     </details>
     <details>
-      <summary>Jaka jest maksymalna średnica przewiertu?</summary>
-      <p>Oferujemy przewierty sterowane w zakresie od 50mm do 750mm.</p>
+      <summary>Maksymalna średnica przewiertu?</summary>
+      <p>Od 50mm do 750mm.</p>
     </details>
     <details>
-      <summary>Czy można zamówić przewiert na terenie podmokłym? </summary>
-      <p>Jak najbardziej - operujemy na terenach bagiennych oraz pod ciekami wodnymi. Przeszkodą są dopiero zbiorniki wodne o przekroju >50m</p>
+      <summary>Przewiert na terenie podmokłym?</summary>
+      <p>Tak, z wyłączeniem zbiorników powyżej 50m szerokości.</p>
     </details>
   </section>
 
-  <!------------------------------------ End of the Content---------------------------------->
-
-
-
-  <!------------------------------------ Start of the Footer -------------------------------->
-  <section class="video-section">
-    <footer class="footer container">
-      
-      <div class="footer-columns">
-        <div>
-          <h4>
-            <a href="#top">
-              Optikol
-            </a>
-          </h4>
-          <a href="#Ofirmie">O firmie</a>
-          <a href="#Oferta">Oferta</a>
-          <a href="#FAQ">FAQ</a>
-          <a href="https://www.gov.pl/web/klimat" target="_blank">MKiŚ</a>
-        </div>
-        <!-- <div>
-          <h4>Resources</h4>
-          <a href="#">Blog</a>
-          <a href="#">Recent Projects</a>
-        </div> -->
-        <div>
-          <h4>Kontakt</h4>
-          <p>Na maile odpowiadamy w ciągu 24 godzin</p>
-          <a href="mailto:zapytajoprzewiert@gmail.com">Wyślij zapytanie</a>
-          <a href="mailto:wspolpraca@gmail.com">Nawiąż współpracę</a>
-        </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-columns">
+      <div class="footer-col">
+        <h4><a href="#top">OPTIKOL</a></h4>
+        <a href="#Oferta">Oferta</a>
+        <a href="#Ofirmie">O firmie</a>
+        <a href="#FAQ">FAQ</a>
       </div>
-      <p class="copyright">&copy; 2025 Optikol. Wszelkie prawa zastrzeżone.</p>
-    </footer>
-  </section>
-  <!------------------------------------ End of the Footer----------------------------------->
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <p>Na maile odpowiadamy w ciągu 24 godzin.</p>
+        <a href="mailto:zapytajoprzewiert@gmail.com">Wyślij zapytanie</a>
+        <a href="mailto:wspolpraca@gmail.com">Nawiąż współpracę</a>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2025 OPTIKOL. Wszelkie prawa zastrzeżone.
+    </div>
+  </footer>
 
 </body>
 </html>
